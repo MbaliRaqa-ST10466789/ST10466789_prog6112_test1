@@ -22,13 +22,15 @@ public class ElectornicsFranchiseReport {
         // Single array holding the city names
         String[] cities = {"Cape Town", " Port Elizabeth", "Pretoria"};
 
-        // Two-dimensional array: row = city, column 0 = PS5, column 1 = XBOX
-        int[][] accidents = new int[cities.length][2];
-
+        // Two-dimensional array: row = city, column 0 = PS5, column 1 = XBOX, column 2 = SWITCH
+        int[][] sales = {{1000, 2000,3000},
+                          {2000, 3000, 4000},
+                          {1500, 1100, 1200}};
+        
         // ---------- Capture input for each city ----------
         for (int i = 0; i < cities.length; i++) {
             System.out.print("Enter the number of sales for " + cities[i] + ": ");
-            accidents[i][0] = input.nextInt();
+            sales[i][0] = input.nextInt();
 
           
         }
